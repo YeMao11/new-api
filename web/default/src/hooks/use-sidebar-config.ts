@@ -17,7 +17,6 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 For commercial licensing, please contact support@quantumnous.com
 */
 import { useMemo } from 'react'
-import { useAuthStore } from '@/stores/auth-store'
 import { useStatus } from '@/hooks/use-status'
 import type { NavGroup, NavItem } from '@/components/layout/types'
 
@@ -273,7 +272,6 @@ function filterNavItems(
  */
 export function useSidebarConfig(navGroups: NavGroup[]): NavGroup[] {
   const { status } = useStatus()
-  const { auth } = useAuthStore()
 
   const adminConfig = useMemo(
     () =>
@@ -283,27 +281,15 @@ export function useSidebarConfig(navGroups: NavGroup[]): NavGroup[] {
     [status?.SidebarModulesAdmin]
   )
 
-  const userConfig = useMemo(() => {
-    // If the backend marks the user as unable to configure the sidebar
-    // (e.g. root accounts), skip the user overlay entirely — a stale
-    // historical sidebar_modules value from a previous role would otherwise
-    // hide admin entries for someone who has no in-product UI to restore
-    // them.
-    if (auth?.user?.permissions?.sidebar_settings === false) {
-      return null
-    }
-    return parseUserSidebarConfig(auth?.user?.sidebar_modules)
-  }, [auth?.user?.permissions?.sidebar_settings, auth?.user?.sidebar_modules])
-
   const filteredNavGroups = useMemo(
     () =>
       navGroups
         .map((group) => ({
           ...group,
-          items: filterNavItems(group.items, adminConfig, userConfig),
+          items: filterNavItems(group.items, adminConfig, null),
         }))
-        .filter((group) => group.items.length > 0), // Only show navigation groups with visible items
-    [navGroups, adminConfig, userConfig]
+        .filter((group) => group.items.length > 0),
+    [navGroups, adminConfig]
   )
 
   return filteredNavGroups

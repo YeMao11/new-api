@@ -450,27 +450,6 @@ func GetSelf(c *gin.Context) {
 func calculateUserPermissions(userRole int) map[string]interface{} {
 	permissions := map[string]interface{}{}
 
-	// 根据用户角色计算权限
-	if userRole == common.RoleRootUser {
-		// 超级管理员不需要边栏设置功能
-		permissions["sidebar_settings"] = false
-		permissions["sidebar_modules"] = map[string]interface{}{}
-	} else if userRole == common.RoleAdminUser {
-		// 管理员可以设置边栏，但不包含系统设置功能
-		permissions["sidebar_settings"] = true
-		permissions["sidebar_modules"] = map[string]interface{}{
-			"admin": map[string]interface{}{
-				"setting": false, // 管理员不能访问系统设置
-			},
-		}
-	} else {
-		// 普通用户只能设置个人功能，不包含管理员区域
-		permissions["sidebar_settings"] = true
-		permissions["sidebar_modules"] = map[string]interface{}{
-			"admin": false, // 普通用户不能访问管理员区域
-		}
-	}
-
 	return permissions
 }
 

@@ -17,19 +17,19 @@ along with this program. If not, see <https://www.gnu.org/licenses/>.
 For commercial licensing, please contact support@quantumnous.com
 */
 import {
-  Activity,
   Box,
+  ChartBar,
+  CircleUser,
+  Cog,
   CreditCard,
-  FileText,
+  FileSearch,
   FlaskConical,
   Key,
   LayoutDashboard,
   ListTodo,
-  MessageSquare,
-  Radio,
-  Settings,
-  Ticket,
-  User,
+  MessageCircle,
+  SatelliteDish,
+  TicketPercent,
   Users,
   Wallet,
 } from 'lucide-react'
@@ -58,7 +58,7 @@ export function useSidebarData(): SidebarData {
           },
           {
             title: t('Chat'),
-            icon: MessageSquare,
+            icon: MessageCircle,
             type: 'chat-presets',
           },
         ],
@@ -70,7 +70,7 @@ export function useSidebarData(): SidebarData {
           {
             title: t('Overview'),
             url: '/dashboard/overview',
-            icon: Activity,
+            icon: ChartBar,
           },
           {
             title: t('Dashboard'),
@@ -85,7 +85,7 @@ export function useSidebarData(): SidebarData {
           {
             title: t('Usage Logs'),
             url: '/usage-logs/common',
-            icon: FileText,
+            icon: FileSearch,
           },
           {
             title: t('Task Logs'),
@@ -108,7 +108,7 @@ export function useSidebarData(): SidebarData {
           {
             title: t('Profile'),
             url: '/profile',
-            icon: User,
+            icon: CircleUser,
           },
         ],
       },
@@ -119,7 +119,7 @@ export function useSidebarData(): SidebarData {
           {
             title: t('Channels'),
             url: '/channels',
-            icon: Radio,
+            icon: SatelliteDish,
           },
           {
             title: t('Models'),
@@ -134,7 +134,7 @@ export function useSidebarData(): SidebarData {
           {
             title: t('Redemption Codes'),
             url: '/redemption-codes',
-            icon: Ticket,
+            icon: TicketPercent,
           },
           {
             title: t('Subscription Management'),
@@ -145,7 +145,7 @@ export function useSidebarData(): SidebarData {
             title: t('System Settings'),
             url: '/system-settings/site',
             activeUrls: ['/system-settings'],
-            icon: Settings,
+            icon: Cog,
           },
         ],
       },
