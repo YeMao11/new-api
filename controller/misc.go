@@ -231,6 +231,18 @@ func GetHomePageContent(c *gin.Context) {
 	return
 }
 
+func GetDocsContent(c *gin.Context) {
+	common.OptionMapRWMutex.RLock()
+	content := common.OptionMap["Docs_"+c.Query("lang")]
+	common.OptionMapRWMutex.RUnlock()
+
+	c.JSON(http.StatusOK, gin.H{
+		"success": true,
+		"message": "",
+		"data":    content,
+	})
+}
+
 func SendEmailVerification(c *gin.Context) {
 	email := c.Query("email")
 	if err := common.Validate.Var(email, "required,email"); err != nil {
