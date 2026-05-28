@@ -1,7 +1,0 @@
-{
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cd /home/yzs/project-aiproxy/new-api && go build -o new-api . && pkill -f \\\"new-api\\\" 2>/dev/null; sleep 1; nohup ./new-api --port 3000 > /dev/null 2>&1 & sleep 3 && curl -s http://localho...",
-  "error": "Exit code 144",
-  "timestamp": "2026-05-28T00:45:13.669Z",
-  "retry_count": 1
-}
