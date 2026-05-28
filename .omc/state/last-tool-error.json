@@ -1,0 +1,7 @@
+{
+  "tool_name": "Bash",
+  "tool_input_preview": "{\"command\":\"git branch -v && echo \\\"===\\\" && git status --short | grep -v '^\\\\?\\\\.omc' | grep -v '^\\\\?web/default/\\\\.omc' && echo \\\"===\\\" && echo \\\"Main vs feat diff:\\\" && git diff feat/ai-proxy-dev m...",
+  "error": "Exit code 2\n  feat/ai-proxy-dev 31748c5b feat: AIProxy branding — homepage, i18n, docs placeholder, logo\n* main              31748c5b [领先 3] feat: AIProxy branding — homepage, i18n, docs placeholder, logo\n===\nugrep: error: error at position 5\n(?m)^?web/default/\\.omc\n     \\___invalid syntax\n\n\nugrep: error: error at position 5\n(?m)^?\\.omc\n     \\___invalid syntax",
+  "timestamp": "2026-05-28T03:32:06.398Z",
+  "retry_count": 1
+}

@@ -22,6 +22,7 @@ import { useTranslation } from 'react-i18next'
 import { Markdown } from '@/components/ui/markdown'
 import { Skeleton } from '@/components/ui/skeleton'
 import { PublicLayout } from '@/components/layout'
+import { useSystemConfig } from '@/hooks/use-system-config'
 import { getAboutContent } from './api'
 
 function isValidUrl(value: string) {
@@ -39,6 +40,8 @@ function isLikelyHtml(value: string) {
 
 function EmptyAboutState() {
   const { t } = useTranslation()
+  const { systemName } = useSystemConfig()
+  const displayName = systemName || 'AIProxy'
   const currentYear = new Date().getFullYear()
 
   return (
@@ -57,28 +60,28 @@ function EmptyAboutState() {
         </div>
         <div className='space-y-4 text-sm'>
           <p>
-            {t('New API Project Repository:')}{' '}
+            {t('Project Repository')}:{' '}
             <a
-              href='https://github.com/QuantumNous/new-api'
+              href='https://github.com/YeMao11/new-api'
               target='_blank'
               rel='noopener noreferrer'
               className='text-primary hover:underline'
             >
-              {t('https://github.com/QuantumNous/new-api')}
+              {t('https://github.com/YeMao11/new-api')}
             </a>
           </p>
           <p className='text-muted-foreground'>
             <a
-              href='https://github.com/QuantumNous/new-api'
+              href='https://github.com/YeMao11/new-api'
               target='_blank'
               rel='noopener noreferrer'
               className='text-primary hover:underline'
             >
-              {t('NewAPI')}
+              {displayName}
             </a>{' '}
             © {currentYear}{' '}
             <a
-              href='https://github.com/QuantumNous'
+              href='https://github.com/YeMao11'
               target='_blank'
               rel='noopener noreferrer'
               className='text-primary hover:underline'
@@ -107,7 +110,7 @@ function EmptyAboutState() {
           <p className='text-muted-foreground'>
             {t('This project must be used in compliance with the')}{' '}
             <a
-              href='https://github.com/QuantumNous/new-api/blob/main/LICENSE'
+              href='https://github.com/YeMao11/new-api/blob/main/LICENSE'
               target='_blank'
               rel='noopener noreferrer'
               className='text-primary hover:underline'
@@ -115,6 +118,9 @@ function EmptyAboutState() {
               {t('AGPL v3.0 License')}
             </a>
             .
+          </p>
+          <p className='text-muted-foreground/50 text-[11px] mt-6'>
+            {t('This project complies with the AGPL v3.0 license. Source code is publicly available at the repository linked above.')}
           </p>
         </div>
       </div>
