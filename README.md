@@ -1,8 +1,25 @@
 <div align="center">
 
+# AIProxy → [aiprx.io](https://aiprx.io)
+
+**OpenAI-compatible API access to Qwen, DeepSeek, GLM & more.**
+
+[![Website](https://img.shields.io/badge/website-aiprx.io-blue)](https://aiprx.io)
+[![AGPL v3](https://img.shields.io/badge/license-AGPL%20v3-green)](LICENSE)
+
+---
+
+*Based on [New API](https://github.com/QuantumNous/new-api) (AGPLv3). See upstream section below for the original project.*
+
+</div>
+
+---
+
+<div align="center">
+
 ![new-api](/web/default/public/logo.png)
 
-# New API
+# New API (Upstream)
 
 🍥 **Next-Generation LLM Gateway and AI Asset Management System**
 
