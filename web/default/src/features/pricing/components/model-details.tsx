@@ -955,6 +955,7 @@ export function ModelDetailsContent(props: ModelDetailsContentProps) {
             />
           </section>
 
+          {/* Hidden: backend doesn't return real metadata yet
           <ModelDetailsQuickStats metadata={metadata} />
 
           <ModelSignalsSection
@@ -964,6 +965,7 @@ export function ModelDetailsContent(props: ModelDetailsContentProps) {
           />
 
           <ModelDetailsProviderInfo model={props.model} />
+          */}
         </TabsContent>
 
         <TabsContent value='performance' className='outline-none'>

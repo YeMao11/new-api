@@ -54,4 +54,16 @@ i18n
     },
   })
 
+// Sync <html lang> with active language for SEO
+i18n.on('languageChanged', (lng) => {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = lng
+  }
+})
+
+// Set initial lang attribute on first load
+if (typeof document !== 'undefined' && i18n.language) {
+  document.documentElement.lang = i18n.language
+}
+
 export default i18n

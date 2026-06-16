@@ -1,0 +1,59 @@
+User-agent: *
+Allow: /
+Crawl-delay: 10
+
+# 禁止抓取认证和管理类路径
+Disallow: /auth/
+Disallow: /dashboard/
+Disallow: /channels/
+Disallow: /keys/
+Disallow: /users/
+Disallow: /wallet/
+Disallow: /billing/
+Disallow: /operations/
+Disallow: /security/
+Disallow: /system-settings
+Disallow: /subscriptions/
+Disallow: /redemption-codes/
+Disallow: /usage-logs/
+Disallow: /console/
+Disallow: /profile/
+Disallow: /chat/
+Disallow: /chat2link
+Disallow: /content/
+Disallow: /site/
+Disallow: /setup/
+Disallow: /otp
+Disallow: /errors/
+Disallow: /oauth/
+Disallow: /api/
+
+# 禁止 AI 训练爬虫抓取
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+Sitemap: https://aiprx.io/sitemap.xml

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ═══════════ 首页 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/"/>
+  </url>
+
+  <!-- ═══════════ 模型广场/定价 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/pricing</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/pricing"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/pricing?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/pricing?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/pricing?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/pricing?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/pricing?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/pricing"/>
+  </url>
+
+  <!-- ═══════════ 关于我们 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/about</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/about"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/about?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/about?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/about?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/about?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/about?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/about"/>
+  </url>
+
+  <!-- ═══════════ 注册 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/sign-up</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/sign-up"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/sign-up?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/sign-up?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/sign-up?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/sign-up?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/sign-up?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/sign-up"/>
+  </url>
+
+  <!-- ═══════════ 登录 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/sign-in</loc>
+    <lastmod>2026-06-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/sign-in"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/sign-in?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/sign-in?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/sign-in?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/sign-in?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/sign-in?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/sign-in"/>
+  </url>
+
+  <!-- ═══════════ 隐私政策 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/privacy-policy</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/privacy-policy?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/privacy-policy?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/privacy-policy?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/privacy-policy?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/privacy-policy?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/privacy-policy"/>
+  </url>
+
+  <!-- ═══════════ 用户协议 ═══════════ -->
+  <url>
+    <loc>https://aiprx.io/user-agreement</loc>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://aiprx.io/user-agreement"/>
+    <xhtml:link rel="alternate" hreflang="zh" href="https://aiprx.io/user-agreement?lang=zh"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://aiprx.io/user-agreement?lang=fr"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://aiprx.io/user-agreement?lang=ja"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://aiprx.io/user-agreement?lang=ru"/>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://aiprx.io/user-agreement?lang=vi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://aiprx.io/user-agreement"/>
+  </url>
+
+</urlset>

@@ -1,19 +1,162 @@
 <!doctype html>
-<html lang="en">
+<html id="app-html" lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/logo.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="canonical" href="https://aiprx.io/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+
+    <!-- hreflang: 6-language SPA — default (en) has no lang param; others use ?lang= -->
+    <link rel="alternate" hreflang="en" href="https://aiprx.io/" />
+    <link rel="alternate" hreflang="zh" href="https://aiprx.io/?lang=zh" />
+    <link rel="alternate" hreflang="fr" href="https://aiprx.io/?lang=fr" />
+    <link rel="alternate" hreflang="ja" href="https://aiprx.io/?lang=ja" />
+    <link rel="alternate" hreflang="ru" href="https://aiprx.io/?lang=ru" />
+    <link rel="alternate" hreflang="vi" href="https://aiprx.io/?lang=vi" />
+    <link rel="alternate" hreflang="x-default" href="https://aiprx.io/" />
 
     <!-- Primary Meta Tags -->
-    <title>AIProxy</title>
-    <meta name="title" content="AIProxy" />
+    <title>AIProxy — AI API Gateway & Agent Router | Qwen, DeepSeek, GLM, Kimi</title>
+    <meta name="title" content="AIProxy — AI API Gateway & Agent Router | Qwen, DeepSeek, GLM, Kimi" />
     <meta
       name="description"
-      content="Reliable API access to Chinese AI models — Qwen, DeepSeek, GLM and more. OpenAI, Anthropic, and Gemini compatible."
+      content="AIProxy is an AI API gateway and agent router that aggregates Qwen, DeepSeek, GLM, Kimi, MiniMax and 20+ Chinese AI models behind a single OpenAI-compatible API. Multi-model orchestration, unified billing, zero protocol switching."
     />
+    <meta name="keywords" content="AI API gateway, LLM API gateway, AI agent router, agent routing, model aggregation, AI aggregator, multi-model API, unified AI API, LLM proxy, OpenAI compatible proxy, model routing, AI orchestration, API unification, Qwen API, DeepSeek API, GLM API, Kimi API, MiniMax API, Chinese AI models API, best price AI models, cheap AI API, affordable LLM API" />
+    <meta name="author" content="AIProxy" />
 
-    <meta name="theme-color" content="#fff" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://aiprx.io/" />
+    <meta property="og:title" content="AIProxy — AI API Gateway & Agent Router for Chinese AI Models" />
+    <meta
+      property="og:description"
+      content="Aggregate 20+ Chinese AI models behind one OpenAI-compatible API. Multi-model routing, unified billing, zero protocol switching. Qwen, DeepSeek, GLM, Kimi — one key, credit card payment."
+    />
+    <meta property="og:site_name" content="AIProxy" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="zh_CN" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="ja_JP" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:locale:alternate" content="vi_VN" />
+    <meta property="og:image" content="https://aiprx.io/logo.png" />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="AIProxy — AI API Gateway Logo" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aiprx_io" />
+    <meta name="twitter:title" content="AIProxy — AI API Gateway & Agent Router" />
+    <meta
+      name="twitter:description"
+      content="AI API gateway aggregating 20+ Chinese AI models. One OpenAI-compatible key, multi-model routing, unified billing. Qwen, DeepSeek, GLM — start free with $2."
+    />
+    <meta name="twitter:image" content="https://aiprx.io/logo.png" />
+    <meta name="twitter:image:alt" content="AIProxy Logo" />
+
+    <!-- Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AIProxy",
+      "url": "https://aiprx.io",
+      "logo": "https://aiprx.io/logo.png",
+      "description": "AI API gateway and agent router. One OpenAI-compatible key to access Qwen, DeepSeek, GLM, Kimi, MiniMax and 20+ Chinese AI models — multi-model aggregation, unified billing, zero protocol switching.",
+      "sameAs": [
+        "https://github.com/QuantumNous/new-api",
+        "https://twitter.com/aiprx_io"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@aiprx.io"
+      }
+    }
+    </script>
+
+    <!-- Structured Data: SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "AIProxy",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Web",
+      "description": "AI API gateway and agent router aggregating 20+ Chinese AI models behind a single OpenAI-compatible endpoint. Multi-model orchestration, unified billing, zero protocol switching.",
+      "url": "https://aiprx.io",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "Free tier with $2 credit. Pro plan at $6/month with lower service fees."
+      }
+    }
+    </script>
+
+    <!-- Structured Data: FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is AIProxy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIProxy is an AI API gateway and agent router that aggregates 20+ Chinese AI models (Qwen, DeepSeek, GLM, Kimi, MiniMax, etc.) behind a single OpenAI-compatible API — multi-model orchestration, unified billing, zero protocol switching."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How does AIProxy's agent routing work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIProxy acts as a unified API gateway: you send requests in OpenAI format, and AIProxy routes them to the best available model across Qwen, DeepSeek, GLM, Kimi, and 20+ providers — with automatic failover, weighted load balancing, and channel affinity."
+        }
+      }, {
+        "@type": "Question",
+        "name": "What models are available on AIProxy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIProxy aggregates Qwen (3.7-Max, 3.6-Plus, 3.6-35B), DeepSeek (V4-Pro, V4-Flash), GLM-5.1, Kimi, MiniMax, and 20+ Chinese AI models. New models added regularly. See the full list at aiprx.io/pricing."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Is AIProxy compatible with OpenAI SDK?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. AIProxy is a fully OpenAI-compatible API gateway. Change your base URL to https://aiprx.io/v1 and your existing OpenAI SDK code works with Qwen, DeepSeek, GLM, and all supported models — zero protocol switching."
+        }
+      }, {
+        "@type": "Question",
+        "name": "How much does AIProxy cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AIProxy has a free tier with $2 in credits. Pro plan is $6/month with a 5% service fee. Ultra plan is $72/year with a 2% service fee. Unified billing across all models — you only pay for the tokens you use. See aiprx.io/pricing for details."
+        }
+      }]
+    }
+    </script>
+
+    <!-- Structured Data: WebSite -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "AIProxy",
+      "url": "https://aiprx.io",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://aiprx.io/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <meta name="theme-color" content="#2563EB" />
     <!--umami-->
     <!--Google Analytics-->
   </head>
