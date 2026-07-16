@@ -13,7 +13,7 @@ func CORS() gin.HandlerFunc {
 	return cors.New(config)
 }
 
-func PoweredBy() gin.HandlerFunc {
+func Version() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		c.Next()
 	}
