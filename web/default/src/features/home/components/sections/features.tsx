@@ -18,7 +18,6 @@ For commercial licensing, please contact support@quantumnous.com
 */
 import { Shield, Server, Key, Eye, Code, Gauge } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-
 import { AnimateInView } from '@/components/animate-in-view'
 
 interface FeaturesProps {
@@ -72,9 +71,9 @@ export function Features(_props: FeaturesProps) {
     {
       id: 'pricing',
       icon: <Gauge className='size-5' strokeWidth={1.5} />,
-      title: t('Practical Pricing, Real Value'),
+      title: t('Competitive & Transparent Pricing'),
       desc: t(
-        'Upstream costs are structurally lower through regional procurement. Usage-based billing with real-time tracking — pay only for what you consume, with no hidden markups.'
+        'Regional procurement keeps upstream costs structurally lower. Usage-based billing with real-time tracking means you only pay for what you consume, with no hidden markups.'
       ),
     },
   ]

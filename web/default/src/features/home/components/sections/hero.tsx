@@ -30,7 +30,7 @@ export function Hero(props: HeroProps) {
   const { t } = useTranslation()
 
   return (
-    <section className='relative z-10 flex min-h-[80vh] items-center justify-center overflow-hidden px-6 py-16 md:py-20 lg:py-24'>
+    <section className='relative z-10 overflow-hidden px-6 pt-24 pb-16 md:pt-32 md:pb-24 lg:pt-36 lg:pb-28'>
       {/* Radial gradient background */}
       <div
         aria-hidden
@@ -66,10 +66,10 @@ export function Hero(props: HeroProps) {
           className='landing-animate-fade-up text-[clamp(2.25rem,4.5vw,3.25rem)] leading-[1.15] font-bold tracking-tight'
           style={{ animationDelay: '60ms' }}
         >
-          {t('Stable API Access to')}
+          {t('Reliable API Access to')}
           <br />
           <span className='bg-gradient-to-r from-blue-400 via-violet-400 to-purple-500 bg-clip-text text-transparent'>
-            {t('Qwen, DeepSeek, GLM & More')}
+            {t('Chinese AI Models')}
           </span>
         </h1>
         <p
@@ -77,7 +77,7 @@ export function Hero(props: HeroProps) {
           style={{ animationDelay: '120ms' }}
         >
           {t(
-            'A single OpenAI-compatible endpoint with multi-key failover. Stable, always-on access to capable models at practical prices.'
+            'Stable, always-on access to Qwen, DeepSeek, GLM and more — through a single OpenAI-compatible endpoint. Multi-key failover, zero infrastructure headaches.'
           )}
         </p>
 
