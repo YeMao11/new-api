@@ -71,9 +71,9 @@ export function Features(_props: FeaturesProps) {
     {
       id: 'pricing',
       icon: <Gauge className='size-5' strokeWidth={1.5} />,
-      title: t('Competitive & Transparent Pricing'),
+      title: t('Practical Pricing, Real Value'),
       desc: t(
-        'Regional procurement keeps upstream costs structurally lower. Usage-based billing with real-time tracking means you only pay for what you consume, with no hidden markups.'
+        'Upstream costs are structurally lower through regional procurement. Usage-based billing with real-time tracking — pay only for what you consume, with no hidden markups.'
       ),
     },
   ]
