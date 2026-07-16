@@ -80,7 +80,7 @@
   "devDependencies": {
     "@rsbuild/core": "catalog:",
     "@rsbuild/plugin-react": "catalog:",
-    "@rsbuild/plugin-tailwindcss": "catalog:",
+    "@rsbuild/plugin-tailwindcss": "^2.0.3",
     "@tanstack/react-query-devtools": "^5.101.2",
     "@tanstack/react-router-devtools": "^1.167.0",
     "@tanstack/router-plugin": "^1.168.19",

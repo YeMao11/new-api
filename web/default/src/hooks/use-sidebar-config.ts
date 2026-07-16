@@ -18,6 +18,7 @@ For commercial licensing, please contact support@quantumnous.com
 */
 import { useMemo } from 'react'
 import { useStatus } from '@/hooks/use-status'
+import { useAuthStore } from '@/stores/auth-store'
 import type { NavGroup, NavItem } from '@/components/layout/types'
 
 type SidebarSectionConfig = {

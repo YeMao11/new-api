@@ -219,7 +219,6 @@ func main() {
 		Handler: server,
 	}
 
-		service.SetServer(srv)
 	go func() {
 		if err := srv.ListenAndServe(); err != nil && !errors.Is(err, http.ErrServerClosed) {
 			common.FatalLog("failed to start HTTP server: " + err.Error())
