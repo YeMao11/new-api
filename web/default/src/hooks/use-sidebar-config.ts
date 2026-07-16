@@ -294,3 +294,17 @@ export function useSidebarConfig(navGroups: NavGroup[]): NavGroup[] {
 
   return filteredNavGroups
 }
+export function useIsSidebarModuleVisible(url: string): boolean {
+  const { status } = useStatus()
+  const { auth } = useAuthStore()
+
+  const adminConfig = parseSidebarConfig(
+    status?.SidebarModulesAdmin as string | null | undefined
+  )
+  const userConfig =
+    auth?.user?.permissions?.sidebar_settings === false
+      ? null
+      : parseUserSidebarConfig(auth?.user?.sidebar_modules)
+
+  return isModuleEnabled(url, adminConfig, userConfig)
+}
